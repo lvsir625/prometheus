@@ -11,21 +11,21 @@ data:
     global: 
       resolve_timeout: 5m
       smtp_smarthost: 'smtp.163.com:25'
-      smtp_from: 'lvsir813@163.com'
-      smtp_auth_username: 'lvsir813@163.com'
-      smtp_auth_password: 'LVxiaopu1356'
+      smtp_from: '****@163.com'
+      smtp_auth_username: '****@163.com'
+      smtp_auth_password: '*********'
       smtp_require_tls: false
     receivers:
     - name: 'mail'
       email_configs:
-      - to: 'lv.ya.jie@163.com'
+      - to: '*******@163.com'
         send_resolved: true
     - name: 'wechat'
       wechat_configs:
-      - corp_id: 'wxff5da5ea5ddacd7d'  
+      - corp_id: '*************'  
         to_party: '1'  
         agent_id: '1'   
-        api_secret: 'dSk_X_bk4KrItFKHUgxDl4GtBXt9CGLEABFZ88TnVO8'    
+        api_secret: '*********************************'    
         send_resolved: true
     route:
       group_interval: 10s 
