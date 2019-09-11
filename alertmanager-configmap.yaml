@@ -27,8 +27,11 @@ data:
         agent_id: '1'   
         api_secret: '*********************************'    
         send_resolved: true
+    - name: 'webhook'
+      webhook_configs:
+      - url: http://webhook-dingtalk:8060/dingtalk/webhook1/send #钉钉服务的连接
     route:
       group_interval: 10s 
       group_wait: 10s
-      receiver: 'wechat' 
+      receiver: 'webhook' 
       repeat_interval: 1m
